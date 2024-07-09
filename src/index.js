@@ -9,6 +9,7 @@ function displayRecipe(response){
 
 }
 
+// Display the generated Recipe
 function generateRecipe(event){
     event.preventDefault();
 
@@ -30,4 +31,3 @@ function generateRecipe(event){
 let aiForm = document.querySelector("#search-form");
 aiForm.addEventListener("submit", generateRecipe);
 
-// Display the generated Poem
