@@ -11,19 +11,21 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>AI Generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>✦ Welcome on my AI Generator ✦</h1>
+      <h1>✦ Recipe Generator ✦</h1>
       <main>
         <form action="" id="search-form">
           <input
             type="text"
-            placeholder="Enter your prompt..."
+            placeholder="Main ingredient..."
             required
             autocomplete="off"
-            class="prompt"
+            class="instructions"
+            id="text-instructions"
           />
           <input type="submit" value="Generate" class="generate-button" />
         </form>
