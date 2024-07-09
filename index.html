@@ -4,45 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Generator</title>
   </head>
   <body>
-    <header class="header">
-      <div class="column">
-        <div>
-          <h1>✦ Welcome on my AI Generator ✦</h1>
+    <div class="container">
+      <h1>✦ Welcome on my AI Generator ✦</h1>
+      <main>
+        <form action="" id="search-form">
+          <input
+            type="text"
+            placeholder="Enter your prompt..."
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" value="Generate" class="generate-button" />
+        </form>
+        <div class="answer">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
+          delectus obcaecati? Qui ipsa voluptate dolores voluptates laboriosam
+          eum optio in iure accusamus repellat. Deserunt, cumque hic atque autem
+          illo soluta!
         </div>
-      </div>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter your prompt..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" value="Search" />
-      </form>
-      <div>The answer will go here!</div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a
-        href="https://www.shecodes.io/graduates/92671-salome-erard"
-        target="_blank"
-        >Salomé Erard</a
-      >
-      and is
-      <a href="https://github.com/salomeIsCoding/AI_Generator" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://shecodes-ai-generator.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a
+          href="https://www.shecodes.io/graduates/92671-salome-erard"
+          target="_blank"
+          >Salomé Erard</a
+        >
+        and is
+        <a href="https://github.com/salomeIsCoding/AI_Generator" target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://shecodes-ai-generator.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
   <script src="src/index.js"></script>
 </html>
