@@ -11,15 +11,9 @@ body {
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 55px;
-}
-
-p {
-    display: block;
-    margin: 0 auto;
+    font-size: 50px;
+    line-height: 45px;
     text-align: center;
-    max-width: 80%;
 }
 
 a {
@@ -27,13 +21,22 @@ a {
 }
 
 form{
-    padding-top: 30px;
+    padding-top: 25px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: left;
 }
 
+small{
+    margin-left: 10px;
+    font-style: italic;
+    color: rgb(0, 0, 0, 0.5);
+}
+
 footer{
     font-size: 13px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .container {
@@ -42,7 +45,6 @@ footer{
     margin: 2% 20%;
     border-radius: 20px;
     vertical-align: middle;
-    text-align: center;
 }
 
 .instructions{
@@ -82,5 +84,24 @@ footer{
     line-height: 23px;
     border-left: 6px solid;
     text-align: left;
+}
+
+.hidden{
+    display: none;
+}
+
+.generating{
+    animation: blink-animation 0.8s steps(5, start) 0s infinite;
+}
+@keyframes blink-animation {
+    to{
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+            visibility: hidden;
+        }
 }
 
